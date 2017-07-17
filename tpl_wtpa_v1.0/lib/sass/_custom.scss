@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*==============================
+-Custom
+===============================*/
+//style start
+.page-body {
+  background: #1b1b1b;
+}
+
+.top-genre-box {
+  padding: 1.5rem;
+
+  @include max(767) {
+    @include l-grid-4;
+    padding: .5rem;
+  }
+
+  @include max(374) {
+    @include l-grid-6;
+    padding: .5rem;
+  }
+}
+
+.top-genre-box-link {
+  background: #000;
+  overflow: hidden;
+  border-radius: 6.2rem;
+
+  @include max(767) {
+    border-radius: 3.2rem;
+  }
+
+  @include max(374) {
+    border-radius: 1.6rem;
+  }
+
+}
+
+.top-genre-box-link-in {
+  background: #ccc;
+  padding-top: 100%;
+  display: block;
+}
+
+.top-genre-box-sammury {
+  @include position-center();
+}
+
+.top-genre-box-genre-name {
+  color: #fcfcfc;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 6rem;
+  font-weight: 100;
+  text-align: center;
+  line-height: 6rem;
+
+  @include max(767) {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+  }
+
+}
+
+.textbreak {
+  display: block;
+}
+
+.top-genre-box-genre-count {
+  background: #fcfcfc;
+  color: #666;
+  border-radius: 3.2rem;
+  display: block;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: .5rem 0;
+  width: 60%;
+  @include max(767) {
+    border-radius: 5px;
+    font-size: .8rem;
+    width: 60%;
+  }
+
+}
+
+.genre-count {
+  font-weight: 400;
+  color: #111;
+  font-size: 2.4rem;
+  @include max(767) {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    display: block;
+    font-weight: 600;
+  }
+
+}
+
+.header-time-box {
+  padding: 8rem;
+  overflow: hidden;
+  @include max(767) {
+    @include l-grid-4;
+    padding: 1rem;
+  }
+
+}
+
+.header-time-wrap {
+  background: #ccc;
+  border-radius: 100%;
+  padding-top: 100%;
+  display: block;
+}
+
+.header-time {
+  color: #fcfcfc;
+  font-size: 6rem;
+  font-family: 'Yantramanav', sans-serif;
+  text-align: center;
+  font-weight: 100;
+  @include position-center();
+
+  @include max(767) {
+    font-size: 2rem;
+  }
+
+}
+
+.sitename {
+  color: #fcfcfc;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 8rem;
+  font-weight: 100;
+  text-align :center;
+  margin-bottom: 2rem;
+
+  @include max(767) {
+    line-height: 8rem;
+    text-align: justify;
+    padding: 3rem;
+  }
+
+}
+
+.subcatch {
+  display: block;
+  font-size: 2rem;
+  margin-top: -1rem;
+}
