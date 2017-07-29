@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+/*==============================
+-Custom
+===============================*/
+//style start
+.page-body {
+  background: #1b1b1b;
+}
+
+
+.top-genre-box {
+  padding: 1.5rem;
+
+  @include max(767) {
+    // @include l-grid-6;
+    padding: .5rem;
+  }
+}
+
+.top-genre-box-link {
+  background: rgba(0,0,0,.6);
+  border: solid 1rem #000;
+  overflow: hidden;
+  // border-radius: 6.2rem;
+
+  @include max(767) {
+    border: solid 5px #000;
+  }
+}
+
+.top-genre-box-link-in {
+  // background: linear-gradient(130deg,#36e7c8,#9941D8);
+  padding-top: 100%;
+  display: block;
+
+  @include max(767) {
+    padding-top: 56.75%;
+  }
+}
+
+.top-genre-box-sammury {
+  @include position-center();
+}
+
+.top-genre-box-genre-name {
+  color: #fcfcfc;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 6rem;
+  font-weight: 100;
+  text-align: center;
+  line-height: 6rem;
+
+  @include max(767) {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+  }
+
+}
+
+.textbreak {
+  display: block;
+}
+
+.top-genre-box-genre-count {
+  background: #fcfcfc;
+  color: #666;
+  border-radius: 3.2rem;
+  display: block;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: .5rem 0;
+  width: 60%;
+  @include max(767) {
+    border-radius: 5px;
+    font-size: .8rem;
+    width: 60%;
+  }
+
+}
+
+.genre-count {
+  font-weight: 400;
+  color: #111;
+  font-size: 2.4rem;
+  @include max(767) {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    display: block;
+    font-weight: 600;
+  }
+
+}
+
+
+.l-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.mainvisual-inbox {
+  @include position-center();
+}
+
+.timestomp {
+  margin-bottom: 4rem;
+}
+
+.header-time-box {
+  padding: 8rem;
+  overflow: hidden;
+  @include max(767) {
+    @include l-grid-4;
+    padding: 1rem;
+  }
+
+}
+
+.header-time-wrap {
+  background: rgba(0,0,0,.4);
+  border: solid 2px #fcfcfc;
+  border-radius: 100%;
+  padding-top: 100%;
+  display: block;
+}
+
+.header-time {
+  color: #fcfcfc;
+  font-size: 6rem;
+  font-family: 'Yantramanav', sans-serif;
+  text-align: center;
+  font-weight: 100;
+  @include position-center();
+
+  @include max(767) {
+    font-size: 3rem;
+  }
+
+}
+
+.sitename {
+  color: #fcfcfc;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 8rem;
+  font-weight: 100;
+  text-align :center;
+  margin-bottom: 2rem;
+
+  @include max(767) {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    // text-align: justify;
+    // padding: 3rem;
+    font-weight: 600;
+  }
+
+  @include max(374) {
+    font-size: 2.7rem;
+  }
+
+}
+
+.subcatch {
+  display: block;
+  font-size: 2rem;
+  margin-top: -1rem;
+
+  @include max(767) {
+    font-size: 1.6rem;
+  }
+}
+
+.todayspartylist {
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+  color: #fcfcfc;
+}
+
+.mainvisual-screen {
+  background-image: url('../images/mainvisual_001.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.screen-blur {
+  @include prefix(filter,blur(8px));
+  background-color: rgba(0,0,0,.8);
+  opacity: 0;
+  z-index: -1;
+
+  &::after {
+    content: '';
+    background: rgba(0,0,0,.4);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+
+.arrow-bottom {
+  display: block;
+  border-right: solid 1px #fcfcfc;
+  border-bottom: solid 1px #fcfcfc;
+  height: 40px;
+  width: 40px;
+  @include prefix(transform, rotate(45deg));
+  margin: 0 auto;
+}
+
+.l-wrapper {
+  padding: 4rem 0;
+}
+
+.content-soundcloud {
+  background: rgba(19,53,87,.9);
+  margin-top: 4rem;
+}
+
+.section-header {
+  color: #fcfcfc;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 3rem;
+
+  &::after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 1px;
+    margin: 0 auto;
+    width: 2rem;
+  }
+}

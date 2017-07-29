@@ -76,7 +76,30 @@
     <div class="arrow-bottom"></div>
   </div>
   <div class="mainvisual-screen"></div>
+  <div class="mainvisual-screen screen-blur"></div>
 
 </header>
+
+<script>
+$(function() {
+
+  // スクロールしたら発動
+  $(window).scroll(function() {
+
+    // スクロール量を変数に格納
+    var sc = ( $(this).scrollTop() / 400 );
+
+    // HTMLにスクロール量を表示
+    $('.screen-blur').css({
+      "opacity": sc,
+    });
+
+    $('.screen-blur:after').css({
+      "opacity": sc,
+    });
+
+  });
+});
+</script>
 
 <?php wp_head(); ?>
