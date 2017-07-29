@@ -40,30 +40,42 @@
 
 <header class="l-header">
 
-  <h1 class="sitename">
-    WHERE THE PARTY AT?
-    <span class="subcatch">by MAINFLOOR.JP</span>
-  </h1>
-
-  <div class="l-container">
-    <div class="l-row">
-      <div class="l-grid-4 header-time-box">
-        <span class="header-time-wrap">
-          <p class="header-time">7</p>
-        </span>
-      </div>
-      <div class="l-grid-4 header-time-box">
-        <span class="header-time-wrap">
-          <p class="header-time">17</p>
-        </span>
-      </div>
-      <div class="l-grid-4 header-time-box">
-        <span class="header-time-wrap">
-          <p class="header-time">MON</p>
-        </span>
+  <div class="mainvisual-inbox">
+    <h1 class="sitename">
+      WHERE THE PARTY AT?
+      <span class="subcatch">by MAINFLOOR.JP</span>
+    </h1>
+    <div class="l-container timestomp">
+      <div class="l-row">
+        <div class="l-grid-4 header-time-box">
+          <span class="header-time-wrap">
+            <p class="header-time">
+              <?php echo date("m"); ?>
+            </p>
+          </span>
+        </div>
+        <div class="l-grid-4 header-time-box">
+          <span class="header-time-wrap">
+            <p class="header-time">
+              <?php echo date("d"); ?>
+            </p>
+          </span>
+        </div>
+        <div class="l-grid-4 header-time-box">
+          <span class="header-time-wrap">
+            <p class="header-time">
+              <?php echo date("D"); ?>
+            </p>
+          </span>
+        </div>
       </div>
     </div>
+    <h2 class="todayspartylist">
+      TODAY'S PARTY LIST
+    </h2>
+    <div class="arrow-bottom"></div>
   </div>
+  <div class="mainvisual-screen"></div>
 
 </header>
 

@@ -8,6 +8,10 @@
   background: #1b1b1b;
 }
 
+.l-wrapper {
+  padding: 4rem 0;
+}
+
 .top-genre-box {
   padding: 1.5rem;
 
@@ -98,6 +102,21 @@
 
 }
 
+
+.l-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.mainvisual-inbox {
+  @include position-center();
+}
+
+.timestomp {
+  margin-bottom: 4rem;
+}
+
 .header-time-box {
   padding: 8rem;
   overflow: hidden;
@@ -109,7 +128,8 @@
 }
 
 .header-time-wrap {
-  background: #ccc;
+  background: rgba(0,0,0,.4);
+  border: solid 2px #fcfcfc;
   border-radius: 100%;
   padding-top: 100%;
   display: block;
@@ -124,7 +144,7 @@
   @include position-center();
 
   @include max(767) {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
 }
@@ -138,9 +158,11 @@
   margin-bottom: 2rem;
 
   @include max(767) {
-    line-height: 8rem;
-    text-align: justify;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    // text-align: justify;
     padding: 3rem;
+    font-weight: 600;
   }
 
 }
@@ -149,4 +171,35 @@
   display: block;
   font-size: 2rem;
   margin-top: -1rem;
+}
+
+.todayspartylist {
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+  color: #fcfcfc;
+}
+
+.mainvisual-screen {
+  background-image: url('../images/mainvisual_001.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.arrow-bottom {
+  display: block;
+  border-right: solid 1px #fcfcfc;
+  border-bottom: solid 1px #fcfcfc;
+  height: 40px;
+  width: 40px;
+  @include prefix(transform, rotate(45deg));
+  margin: 0 auto;
 }
