@@ -22,21 +22,39 @@
   background: rgba(0,0,0,.6);
   border: solid 1rem #000;
   overflow: hidden;
+  padding-top: 100%;
+  position: relative;
   // border-radius: 6.2rem;
 
   @include max(767) {
     border: solid 5px #000;
+    padding-top: 56.75%;
   }
 }
 
 .top-genre-box-link-in {
-  // background: linear-gradient(130deg,#36e7c8,#9941D8);
-  padding-top: 100%;
+  background-image: url('../images/visualcontent_001.jpg');
+  background-position: center center;
+  background-size: cover;
   display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 180%;
 
   @include max(767) {
-    padding-top: 56.75%;
+    background-size: cover;
+    padding-top: 150%;
   }
+}
+
+.genrebox-linkin-allmix {
+  background-image: url('../images/visualcontent_001.jpg');
+}
+
+.genrebox-linkin-hiphop {
+  background-image: url('../images/visualcontent_002.jpg');
 }
 
 .top-genre-box-sammury {

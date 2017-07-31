@@ -88,6 +88,7 @@ $(function() {
 
     // スクロール量を変数に格納
     var sc = ( $(this).scrollTop() / 400 );
+    var yyy = ( $(this).scrollTop() / 8);
 
     // HTMLにスクロール量を表示
     $('.screen-blur').css({
@@ -96,6 +97,10 @@ $(function() {
 
     $('.screen-blur:after').css({
       "opacity": sc,
+    });
+
+    $('.top-genre-box-link-in').css({
+      "top" : -yyy +'px',
     });
 
   });

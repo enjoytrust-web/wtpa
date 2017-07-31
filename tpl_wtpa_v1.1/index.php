@@ -4,7 +4,7 @@
     <div class="l-row">
       <div class="l-grid-4 top-genre-box">
         <a href="#" class="top-genre-box-link">
-          <div class="top-genre-box-link-in">
+          <div class="top-genre-box-link-in genrebox-linkin-allmix">
           </div>
           <span class="top-genre-box-sammury">
             <p class="top-genre-box-genre-name">ALL MIX</p>
@@ -14,7 +14,7 @@
       </div>
       <div class="l-grid-4 top-genre-box">
         <a href="#" class="top-genre-box-link">
-          <div class="top-genre-box-link-in">
+          <div class="top-genre-box-link-in genrebox-linkin-hiphop">
           </div>
           <span class="top-genre-box-sammury">
             <p class="top-genre-box-genre-name">HIP-HOP</p>
